@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #d0d3d4;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.PrimaryController">
+   <children>
+      <AnchorPane prefHeight="97.0" prefWidth="640.0" style="-fx-background-color: #85929e;">
+         <children>
+            <Label layoutX="207.0" layoutY="31.0" prefHeight="36.0" prefWidth="246.0" text="Обозреватель бюджета">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="expenseIntField" layoutX="93.0" layoutY="146.0" prefHeight="25.0" prefWidth="211.0" promptText="Введите расход" />
+      <TextField fx:id="expenseStrField" layoutX="93.0" layoutY="190.0" prefHeight="25.0" prefWidth="211.0" promptText="Описания расхода" />
+      <Button fx:id="expenseButton" layoutX="93.0" layoutY="228.0" mnemonicParsing="false" onAction="#addExpense" text="Добавить расход" />
+      <TextField fx:id="incomeIntField" layoutX="93.0" layoutY="281.0" prefHeight="25.0" prefWidth="211.0" promptText="Введите доход" />
+      <TextField fx:id="incomeStrField" layoutX="93.0" layoutY="318.0" prefHeight="25.0" prefWidth="211.0" promptText="Описание дохода" />
+      <Button fx:id="incomeButton" layoutX="93.0" layoutY="354.0" mnemonicParsing="false" onAction="#addIncome" text="Добавить доход" />
+      <TextArea fx:id="textArea" editable="false" layoutX="410.0" layoutY="124.0" prefHeight="331.0" prefWidth="158.0" />
+   </children>
+</AnchorPane>
